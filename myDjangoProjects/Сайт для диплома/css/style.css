@@ -1,0 +1,290 @@
+/*стили*/
+@font-face {
+	font-family: 'Bicubik';
+	src: url('Bicubik.woff2') format('woff2'), url('Bicubik.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,ol,li {
+
+}
+img {
+  vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,body {
+  height: 100%;
+  line-height: 1;
+}
+body {
+  font-family:'Bicubik' ;
+  font-size: 20px;
+  color:  #E5E5EA;
+  background: #111111;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+/* Любой обьект ,который содержит в классе __container, то к нему будут применены эти стили */
+[class*="__container"]{
+  max-width: 1087px;
+  margin: 0px auto;
+  padding: 0px 15px; /*отступы безопасности*/
+}
+
+/*пк*/
+@media (max-width: 1087px){
+[class*="__container"]{
+  max-width: 970px;
+  
+}
+}
+/*планшет*/
+@media (max-width: 992.98px){
+  [class*="__container"]{
+    max-width: 750px;
+  }
+  }
+
+  /*телефон*/
+@media (max-width: 776.98px){
+  [class*="__container"]{
+    max-width: none;
+  }
+  }
+
+/*  шапка*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 116px;
+  align-items: center;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.menu {
+  display: flex;
+  justify-content:start;
+  padding: 0px 227px 0px 0px;
+}
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+.meni__lisk {
+  font-family: 'Bicubik';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #CAFC01;;
+  letter-spacing: 0.03em;
+}
+.meni__lisk:hover {
+  color: #E5E5EA;
+}
+
+
+
+hr {
+    background-color: #CAFC01; /* Цвет линии */
+    width:100%;
+    height: 2px; 
+}
+
+/*основной блок*/
+
+/*===============================================*/
+
+.text-block__title {
+  position: absolute;
+width: 538px;
+height: 100px;
+left: 129px;
+top: 188px;
+
+font-weight: 400;
+font-size: 30px;
+line-height: 126%;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+.text-block__title1 {
+  position: absolute;
+width: 206px;
+height: 50px;
+left: 129px;
+top: 268px;
+
+font-weight: 400;
+font-size: 30px;
+line-height: 126%;
+letter-spacing: 0.03em;
+color: #CAFC01;
+}
+.text-block__text {
+  position: absolute;
+width: 480px;
+height: 198px;
+left: 129px;
+top: 375px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 33px;
+letter-spacing: 0.03em;
+color: #E5E5EA;
+}
+
+
+/*===============================================*/
+.get-palitra {
+  padding: 190px 0px 133px 0px;
+}
+.get-palitra__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.get-palitra__content {
+  flex: 0 1 41%;
+  padding: 0px 0px 0px 20px;
+}
+.get-palitra__content__block-tex {
+  max-width: 410px;
+}
+
+.get-palitra__image {
+  flex: 0 1 59%;
+  position: absolute;
+  width: 551px;
+  height: 631px;
+  left: 660px;
+  top: -80px;
+  max-width: 100%;
+}
+
+/*===============================================*/
+
+.rara__block-text {
+    text-align: center;
+}
+.text_1 {
+  padding: 500px 0px 0px 0px;
+}
+.center_1 {
+  font-weight: 400;
+font-size: 20px;
+line-height: 50px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #CAFC01;
+}
+.center_11 {
+  font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #E5E5EA;
+
+}
+.text_2 {
+  padding: 50px 0px 0px 0px;
+}
+.rar__image {
+  position: absolute;
+width: 442px;
+height: 342px;
+left: -99px;
+top: 950px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.text_3 {
+  padding: 50px 0px 0px 0px;
+}
+
+/*=============================================*/
+
+.fet__container {
+  padding: 190px 0px 133px 0px;
+}
+.fet__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fet__tex-block {
+  max-width: 650px;
+  
+}
+.block-tex {
+  line-height: 20px;
+}
+.center_2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100px;
+  letter-spacing: 0.03em;
+  color: #CAFC01;
+ 
+}
+.center_2_k {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100px;
+  letter-spacing: 0.03em;
+  color: #CAFC01;
+ 
+}
+.center_22 {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  color: #E5E5EA;
+
+}
+.fet__image {
+  position: absolute;
+  width: 236px;
+  height: 278px;
+  left: 900px;
+  top: 102px;
+  padding: 1250px 0px 133px 0px;
+}
+

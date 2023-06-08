@@ -1,0 +1,168 @@
+/*стили*/
+@font-face {
+	font-family: 'Bicubik';
+	src: url('Bicubik.woff2') format('woff2'), url('Bicubik.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,ol,li {
+
+}
+img {
+  vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,body {
+  height: 100%;
+  line-height: 1;
+}
+body {
+  font-family:'Bicubik' ;
+  font-size: 20px;
+  color:  #E5E5EA;
+  background: #111111;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+/* Любой обьект ,который содержит в классе __container, то к нему будут применены эти стили */
+[class*="__container"]{
+  max-width: 1087px;
+  margin: 0px auto;
+  padding: 0px 15px; /*отступы безопасности*/
+}
+
+/*пк*/
+@media (max-width: 1087px){
+[class*="__container"]{
+  max-width: 970px;
+  
+}
+}
+/*планшет*/
+@media (max-width: 992.98px){
+  [class*="__container"]{
+    max-width: 750px;
+  }
+  }
+
+  /*телефон*/
+@media (max-width: 776.98px){
+  [class*="__container"]{
+    max-width: none;
+  }
+  }
+
+/* полностью шапка*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 116px;
+  align-items: center;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+
+
+.menu {
+  display: flex;
+  justify-content:start;
+  padding: 0px 227px 0px 0px;
+}
+.menu__list {
+  display: flex;
+  gap: 35px;
+  
+}
+.menu__item {
+  
+}
+.meni__lisk {
+  font-family: 'Bicubik';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #CAFC01;
+  letter-spacing: 0.03em;
+}
+
+.meni__lisk:hover {
+  color: #E5E5EA;
+}
+
+.meni__lisk.kl {
+  color: #E5E5EA;
+}
+
+hr {
+    background-color: #CAFC01; /* Цвет линии */
+    width:100%;
+    height: 2px; 
+}
+
+.tutl {
+  position: absolute;
+  width: 538px;
+  height: 100px;
+  left: 129px;
+  top: 188px;
+  
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 126%;
+  letter-spacing: 0.03em;
+  color:#CAFC01;
+}
+
+.lop {
+  position: absolute;
+width: 950px;
+left: 129px;
+top: 250px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 33px;
+letter-spacing: 0.03em;
+color: #E5E5EA;
+}
+
+.pa__image {
+margin: 0px 0px 50px 129px;
+width: 131px;
+height: 228px;
+left: 98px;
+top: 308px;
+}
+

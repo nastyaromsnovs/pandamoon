@@ -1,0 +1,63 @@
+/*стили*/
+@font-face {
+	font-family: 'Bicubik';
+	src: url('Bicubik.woff2') format('woff2'), url('Bicubik.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bicubik', sans-serif;
+  height: 100vh;
+  display: flex;
+}
+.header {
+  background-color: black;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.col button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.kl {
+
+    color: #E5E5EA;
+  
+}
